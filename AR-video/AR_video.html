@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>AR with a-frame</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+<script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <body>
+        <a-scene>
+            <a-assets>
+                <video id="SphereVideo" autoplay loop="true" src="video/SphereVideo.webm" webkit-playsinline>
+            </a-assets>
+
+            <!-- Using the asset management system. -->
+            <a-videosphere src="#SphereVideo"></a-videosphere>
+
+            <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+            <!-- <a-videosphere src="video/SphereVideo.webm"></a-videosphere> -->
+        </a-scene>
+    </body>
+</html>
